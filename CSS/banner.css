@@ -1,0 +1,26 @@
+/* CONTENEDOR DEL BANNER */
+
+.banner {
+    padding: 80px;
+}
+
+/* CONTENEDOR IMAGEN */
+
+.banner div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGEN */
+
+.banner div img {
+    width: 100%;
+    filter:contrast(1.2);
+}
+
+/* TEXTO */
+
+.banner h2 {
+    font-size: 40px;
+}

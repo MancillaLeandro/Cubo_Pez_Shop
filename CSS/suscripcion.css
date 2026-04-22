@@ -1,0 +1,89 @@
+/* SECCION */
+
+.suscripcion {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* TITULO */
+
+.suscripcion h2 {
+    font-size: 40px;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* ITEMS */
+
+.formulario label {
+    text-align: left;
+    font-size: 30px;
+}
+
+/* INPUTS */
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: #2a2a2a;
+    height: 25px;
+    font-size: 20px;
+}
+
+/* FOCUS */
+
+.formulario input:focus, .formulario select:focus, .formulario textarea:focus {
+    background: #333;
+    box-shadow: 0 0 0 2px #00d4ff;
+}
+
+/* TEXTAREA */
+
+textarea {
+    font-size: 20px;
+}
+
+/* RADIO Y CHECKBOX */
+
+.radio, .checkbox {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    transform: scale(2); 
+    width: 1000px;
+}
+
+.radio label, .checkbox label {
+    font-size: 12px;
+    margin: auto;
+    color: #aaa;
+}
+
+/* BOTON */
+
+.formulario button {
+    background: #00d4ff;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.formulario button:hover {
+    background: #00d5ffdd;
+}

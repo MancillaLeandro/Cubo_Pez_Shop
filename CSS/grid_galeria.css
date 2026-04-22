@@ -1,0 +1,46 @@
+
+/* CONTENEDOR GRID */
+
+.grid-galeria {
+    display: grid; /* Activamos el grid */
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); /* Columnas flexibles */
+    gap: 15px; /* Espacio entre las imágenes */
+    max-width: 2500px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+/* ESTILOS PARA LAS IMÁGENES */
+
+.grid-galeria img {
+    width: 100%;
+    height: 100%; /* Asegura que las imágenes llenen su contenedor */
+    object-fit: cover; /* Cubre el área sin distorsionar */
+    border-radius: 14px; /* Bordes redondeados */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transición suave para el hover */
+}
+
+/* EFECTO HOVER */
+
+.grid-galeria img:hover {
+    transform: scale(1.08) rotate(1deg); /* Escala y ligera rotación */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6); /* Sombra */
+    z-index: 10; /* Posiciona la imagen por encima de las demás */
+}
+
+h2{
+    margin-left: 100px;
+    font-size: 40px;
+}
+
+/* TAMAÑOS IRREGULARES (COLLAGE) */
+
+.grid-galeria a:nth-child(1) { grid-column: span 2; grid-row: span 1; } /*CUBY*/
+.grid-galeria a:nth-child(2) { grid-column: span 2; grid-row: span 1; } /*TONY*/  
+.grid-galeria a:nth-child(3) { grid-column: span 3; grid-row: span 2; } /*MEFFERTS*/
+.grid-galeria a:nth-child(4) { grid-column: span 3; grid-row: span 1; } /*MAX*/
+.grid-galeria a:nth-child(5) { grid-column: span 3; grid-row: span 1; } /*FELIKS*/
+.grid-galeria a:nth-child(6) { grid-column: span 1; grid-row: span 2; } /*THEMAOISHA*/
+.grid-galeria a:nth-child(7) { grid-column: span 1; grid-row: span 2; } /*JSCUBER*/
+.grid-galeria a:nth-child(8) { grid-column: span 2; grid-row: span 1; } /*RUBIK*/
+.grid-galeria a:nth-child(9) { grid-column: span 2; grid-row: span 1; } /*OSKAR*/
+.grid-galeria a:nth-child(10) { grid-column: span 4; grid-row: span 1; } /*MATS*/

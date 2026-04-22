@@ -1,0 +1,43 @@
+
+.marcas {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+    width: 90%;
+    background: #111;
+    padding: 20px 0;
+}
+
+.marcas h2 {
+    font-style: 'Arial';
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.galeria-marcas {   
+    display: flex;
+    width: 2000px; /* ancho total */
+    animation: scroll 15s linear infinite;
+}
+
+.galeria-marcas img {
+    width: 250px;
+    height: 250px;
+    margin: 0 20px;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.galeria-marcas img:hover {
+    transform: scale(1.15);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-143%);
+    }
+}

@@ -1,0 +1,82 @@
+/*
+
+    ARCHIVO CSS PARA LOS ESTILOS DE LAS CATEGORIAS
+
+*/
+
+/* CONTENEDOR CATEGORIAS */
+
+.categoria {
+    border-radius: 25px;
+    background-color: #222;
+    width: 70%;
+    height: 50%;
+    padding-bottom: 40px;
+    padding-top: 15px;
+    margin: 40px auto 80px auto;     /* Espacio entre secciones */
+    scroll-margin-top: 15vh;
+}
+
+/* TITULOS CATEGORIAS */
+
+.categoria h2 {
+    font-size: 45px;
+    color: #b2b2b2;
+    text-align: center;
+}
+
+/* CONTENEDOR DE LAS CARDS */
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;           /* Permite que pasen a la siguiente fila si no entran */
+    justify-content: center;   /* Centra las cards horizontalmente */
+    gap: 40px;                 /* Espacio entre las cards */
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+/* CARDS */
+
+.card {
+    background: rgba(4, 3, 3, 0.632);
+    border-radius: 15px;
+    width: 300px;              /* Ancho fijo para que todas tengan el mismo tamaño */
+    height: 400px;
+    padding: 20px 25px 20px 15px;
+    text-align: center;        /* Centra el texto y la imagen */
+    transition: transform 0.3s ease;
+}
+
+/* ANIMACION CARDS */
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* IMAGENES */
+
+.card img {
+    width: 250px;              
+    height: 250px;
+    border-radius: 15px;
+    object-fit: contain;       /* Mantiene la proporción sin deformar */
+    margin-top: 20px;
+}
+
+/* NOMBRE */
+
+.card h3 {
+    margin: 35px 0 8px 0;
+    font-size: 25px;
+    color: #222;
+}
+
+/* PRECIO */
+
+.card p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #e63939;            
+    margin: 15px;
+}
