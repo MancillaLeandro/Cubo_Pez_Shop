@@ -1,0 +1,140 @@
+/* CONTENEDOR GENERAL */
+
+.suscripcion {
+    width: 100%;
+    padding: 60px 20px;
+    background: #111;
+    color: white;
+}
+
+
+/* TITULO */
+
+.suscripcion h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* LABELS */
+
+.formulario label {
+    margin-bottom: 8px;
+    margin-top: 18px;
+    font-size: 18px;
+}
+
+
+/* INPUTS, SELECT Y TEXTAREA */
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 15px;
+    background: #222;
+    color: white;
+    border: 2px solid #333;
+    border-radius: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+
+/* EFECTO AL ESCRIBIR */
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #c22222;
+    box-shadow: 0 0 10px rgba(194,34,34,0.6);
+}
+
+
+/* RADIO Y CHECKBOX */
+
+.radio,
+.checkbox {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.radio label,
+.checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+
+/* TAMAÑO DE RADIO Y CHECK */
+
+.radio input,
+.checkbox input {
+    width: auto;
+    accent-color: #c22222;
+}
+
+
+/* TEXTAREA */
+
+.formulario textarea {
+    height: 180px;
+    resize: vertical;
+}
+
+
+/* BOTÓN */
+
+.formulario button {
+    margin-top: 35px;
+    padding: 16px;
+    border: none;
+    border-radius: 30px;
+    background: #c22222;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* HOVER */
+
+.formulario button:hover {
+    background: #e03030;
+    transform: scale(1.03);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .suscripcion h2 {
+        font-size: 30px;
+    }
+
+    .radio,
+    .checkbox {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}

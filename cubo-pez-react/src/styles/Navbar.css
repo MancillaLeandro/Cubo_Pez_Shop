@@ -1,0 +1,110 @@
+
+/* HEADER GENERAL */
+
+.header {
+    background: #111;
+    color: white;
+    position: sticky;
+    font-family: 'Poppins', sans-serif;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* BARRA SUPERIOR FIJA */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    min-height: 120px;
+}
+
+/* CONTENEDOR DEL LOGO */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* NOMBRE DE LA TIENDA */
+
+.logo h1 {
+    font-size: 28px;
+    margin: 0;
+    color: white;
+}
+
+/* BUSCADOR */
+
+.busqueda {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.busqueda input {
+    width: 100%;
+    max-width: 650px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    font-size: 22px;
+}
+/* LOGIN Y CARRITO */
+
+.acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.acciones span {
+    background-color: #c22222da;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+/* ENLACES DE NAVEGACIÓN */
+
+.nav {
+    background: #1a1a1a;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
