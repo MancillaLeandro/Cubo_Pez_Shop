@@ -1,7 +1,6 @@
 /* CONTENEDOR GENERAL */
 
 .suscripcion {
-    width: 100%;
     padding: 60px 20px;
     background: #111;
     color: white;
@@ -137,4 +136,56 @@
         gap: 10px;
     }
 
+}
+
+/*MENSAJE DE ÉXITO*/
+
+.mensaje-exito{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#111,#222);
+}
+
+.mensaje-contenedor{
+    background:rgb(17, 17, 17);
+    padding:55px;
+    border-radius:20px;
+    border:2px solid #771ccc;
+    text-align:center;
+    max-width:600px;
+    box-shadow:6px 6px 60px 35px rgba(90, 19, 122, 0.3);
+}
+
+.mensaje-contenedor h1{
+    color:#771ccc;
+    font-size:3rem;
+    margin-bottom:35px;
+}
+
+.mensaje-contenedor h2{
+    margin-bottom:35px;
+}
+
+.mensaje-contenedor p{
+    margin-bottom:30px;
+    font-size:1.2rem;
+}
+
+.mensaje-contenedor button{
+    padding:12px 35px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#19191a;
+    border:2px solid #771ccc;
+    color:rgb(255, 255, 255);
+    transition:.3s;
+}
+
+.mensaje-contenedor button:hover{
+    transform:scale(1.05);
 }
